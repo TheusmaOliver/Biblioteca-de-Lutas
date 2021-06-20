@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background: url(img/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+  transition: all 1s ease;
+}
+
+/* Titulos */
+.titulos {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 35px;
+}
+
+/* Cards */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 80%;
+  height: 65vh;
+  position: relative;
+}
+
+.wrapper-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  background-color: #8257e58f;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.wrapper-card .imagem {
+  width: 100px;
+  cursor: pointer;
+}
+
+.wrapper-card p {
+  margin-top: 20px;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 2s ease forwards;
+}
+
+.wrapper-card:hover {
+  height: 450px;
+  background-color: #8257e5;
+}
+
+.wrapper-card .gif {
+  width: 300px;
+  visibility: hidden;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  height: 200px;
+}
+
+.wrapper-card #image-naruto {
+  margin-top: 23px;
+}
+
+.wrapper-card #image-rocklee {
+  margin-top: 35px;
+}
+
+.wrapper-card #gif-naruto {
+  width: 200px;
+  position: absolute;
+  top: -8%;
+  left: 10%;
+  height: 200px;
+}
+
+.wrapper-card:hover .imagem {
+  visibility: hidden;
+}
+
+.wrapper-card:hover .gif {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.wrapper-card:hover #gif-gaara {
+  height: 150px;
+}
+
+.wrapper-card:hover h3 {
+  margin-top: 40px;
+}
+
+.wrapper-card:hover #h3-rocklee {
+  margin-top: 110px;
+}
+.wrapper-card:hover p {
+  visibility: visible;
+  transition-delay: 1s;
+}
+
+/* Checkbox cards*/
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label .wrapper-card {
+  height: 450px;
+  border: 2px solid #8257e5;
+  background-color: #8257e58f;
+}
+
+input[type="checkbox"]:checked + label .imagem {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label .gif {
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked + label #gif-gaara {
+  height: 150px;
+}
+input[type="checkbox"]:checked + label #h3-rocklee {
+  margin-top: 110px;
+}
+
+input[type="checkbox"]:checked + label p {
+  visibility: visible;
+}
+
+/* Botão assistir luta */
+.button {
+  margin-top: 30px;
+}
+.button button {
+  background-color: #c3c3c3;
+  color: black;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(134, 134, 134);
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button a:visited {
+  color: black;
+}
