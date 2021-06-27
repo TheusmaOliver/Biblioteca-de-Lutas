@@ -6,9 +6,10 @@ const elementos = document.getElementsByClassName('wrapper-card');
 for (const elemento of elementos) {
     elemento.addEventListener('click', marcarElementoSelecionado);
     elemento.addEventListener('mouseover', function(){
+        console.log(this.id)
         if (this.id === 'card-sasuke'){
 
-            document.body.style.background = "url(../img/sasuke-bg.jpg)";
+            document.body.style.background = "url(img/sasuke-bg.jpg)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.transition = "all 1s ease"
@@ -32,7 +33,7 @@ for (const elemento of elementos) {
        
     })
     elemento.addEventListener('mouseout', function(){
-        document.body.style.background = "url(../img/bg.jpg)";
+        document.body.style.background = "url(img/bg.jpg)";
         document.body.style.backgroundAttachment = "fixed";
         document.body.style.backgroundSize = "cover";
         

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="shortcut icon" href="../static/img/minato-chrome-icon.png">
+    <title>Biblioteca de lutas</title>
+</head>
+
+<body>
+    <h1 class="titulos">Biblioteca de lutas</h1>
+    <h2 class="titulos">Selecione dois personagens</h2>
+
+    <div class="container" id="container">
+        <div class="cards">
+            {%for personagem in personagens%}
+            <input type="checkbox" id="{{personagem.idCheckbox}}" name="personagem" value="{{personagem.value}}" />
+            <label for="{{personagem.labelFor}}">
+                <div class="wrapper-card" id="{{personagem.idCard}}">
+                    <img class="imagem" id="{{personagem.idImagem}}" src="{{personagem.srcImage}}" alt="" />
+                    <img class="gif" id="{{personagem.idGif}}" src="{{personagem.srcGif}}" alt="" />
+                    <h3>{{personagem.nomePersonagem}}</h3>
+                    <p>
+                        {{personagem.biografia}}
+                    </p>
+                </div>
+            </label>
+            {%endfor%}
+        </div>
+        <div class="cards">
+            {%for personagem in personagens2%}
+            <input type="checkbox" id="{{personagem.idCheckbox}}" name="personagem" value="{{personagem.value}}" />
+            <label for="{{personagem.labelFor}}">
+                <div class="wrapper-card" id="{{personagem.idCard}}">
+                    <img class="imagem" id="{{personagem.idImagem}}" src="{{personagem.srcImage}}" alt="" />
+                    <img class="gif" id="{{personagem.idGif}}" src="{{personagem.srcGif}}" alt="" />
+                    <h3 id="{{personagem.idTitulo}}">{{personagem.nomePersonagem}}</h3>
+                    <p>
+                        {{personagem.biografia}}
+                    </p>
+                </div>
+            </label>
+            {%endfor%}
+        </div>
+        <div class="button">
+            <button id="button" type="submit">
+                <a href="#">Assistir a luta!</a>
+            </button>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
