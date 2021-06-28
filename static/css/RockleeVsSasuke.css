@@ -17,17 +17,18 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../../img/gaara-bg-luta.png) no-repeat;
+  background: url(../img/rocklee-bg-luta.png) no-repeat;
   background-position: left;
-  left: -10%;
+  left: -20%;
 }
 
 .bg2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../../img/rocklee-bg-luta.png) no-repeat;
+  background: url(../img/sasuke-bg-luta.png) no-repeat;
   background-position: right;
+  right: -10%;
 }
 
 .conteudo {
@@ -48,6 +49,7 @@ h2 {
 }
 
 .container {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +60,7 @@ img {
 }
 
 button {
+  margin-top: 30px;
   background-color: #c3c3c3;
   color: black;
   font-size: 20px;

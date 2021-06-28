@@ -9,22 +9,22 @@ for (const elemento of elementos) {
         console.log(this.id)
         if (this.id === 'card-sasuke'){
 
-            document.body.style.background = "url(img/sasuke-bg.jpg)";
+            document.body.style.background = "url(../static/img/sasuke-bg.jpg)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.transition = "all 1s ease"
         }else if(this.id === 'card-gaara'){
-            document.body.style.background = "url(../img/gaara-bg.jpg)";
+            document.body.style.background = "url(../static/img/gaara-bg.jpg)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.transition = "all 1s ease"
         }else if(this.id === 'card-rocklee'){
-            document.body.style.background = "url(../img/rocklee-bg.jpg)";
+            document.body.style.background = "url(../static/img/rocklee-bg.jpg)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.transition = "all 1s ease"
         }else if(this.id === 'card-naruto'){
-            document.body.style.background = "url(../img/naruto-bg.jpg)";
+            document.body.style.background = "url(../static/img/naruto-bg.jpg)";
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.transition = "all 1s ease"
@@ -33,7 +33,7 @@ for (const elemento of elementos) {
        
     })
     elemento.addEventListener('mouseout', function(){
-        document.body.style.background = "url(img/bg.jpg)";
+        document.body.style.background = "url(../static/img/bg.jpg)";
         document.body.style.backgroundAttachment = "fixed";
         document.body.style.backgroundSize = "cover";
         
@@ -68,34 +68,34 @@ function marcarElementoSelecionado() {
     
     }
     if (personagens.length == 1){
-        buttonPrincipal.innerHTML = '<a href="#">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/" ><button> Assistir a luta! </button> </form>'
         
     }else if(personagens.length > 2){
-        buttonPrincipal.innerHTML = '<a href="#"> Assistir a luta!</>'
+        buttonPrincipal.innerHTML = '<form action="/" ><button> Assistir a luta! </button> </form>'
         
     }else if (personagens[0].id === 'card-naruto' && personagens[1].id === 'card-gaara' || personagens[0].id === 'card-gaara' && personagens[1].id === 'card-naruto' ){
         
-        buttonPrincipal.innerHTML = '<a href="lutas/Naruto vs Gaara/NarutoVsGaara.html">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/lutas/narutoVsGaara" method="POST"><button> Assistir a luta! </button> </form>'
         
     }else if (personagens[0].id === 'card-naruto' && personagens[1].id === 'card-sasuke' || personagens[0].id === 'card-sasuke' && personagens[1].id === 'card-naruto'  ){
         
-        buttonPrincipal.innerHTML = '<a href="lutas/Naruto vs Sasuke/NarutoVsSasuke.html">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/lutas/narutoVsSasuke" method="POST"><button> Assistir a luta! </button> </form>'
             
     }else if (personagens[0].id === 'card-naruto' && personagens[1].id === 'card-rocklee' || personagens[0].id === 'card-rocklee' && personagens[1].id === 'card-naruto'){
-        buttonPrincipal.innerHTML = '<a href="lutas/Rocklee vs Naruto/RockleeVsNaruto.html">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/lutas/rockleeVsNaruto" method="POST"><button> Assistir a luta! </button> </form>'
 
     }else if (personagens[0].id === 'card-gaara' && personagens[1].id === 'card-sasuke' || personagens[0].id === 'card-sasuke' && personagens[1].id === 'card-gaara'  ){
        
-        buttonPrincipal.innerHTML = '<a href="lutas/Gaara vs Sasuke/GaaraVsSasuke.html">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/lutas/gaaraVsSasuke" method="POST"><button> Assistir a luta! </button> </form>'
     
     }else if (personagens[0].id === 'card-gaara' && personagens[1].id === 'card-rocklee' || personagens[0].id === 'card-rocklee' && personagens[1].id === 'card-gaara'  ){
         
-        buttonPrincipal.innerHTML = '<a href="lutas/Gaara vs Rocklee/GaaraVsRocklee.html">Assistir a luta!</a>'
+        buttonPrincipal.innerHTML = '<form action="/lutas/gaaraVsRocklee" method="POST"><button> Assistir a luta! </button> </form>'
 
     }else if (personagens[0].id === 'card-sasuke' && personagens[1].id === 'card-rocklee' || personagens[0].id === 'card-rocklee' && personagens[1].id === 'card-sasuke'  ){
         
-        buttonPrincipal.innerHTML = '<a href="lutas/Rocklee vs Sasuke/RockleeVsSasuke.html">Assistir a luta!</a>'
-
+        buttonPrincipal.innerHTML = '<form action="/lutas/rockleeVsSasuke" method="POST"><button> Assistir a luta! </button> </form>'
+        
     }
 }
 

@@ -72,5 +72,35 @@ def home():
     return render_template('index.html', personagens=personagens, personagens2=personagens2)
 
 
+@app.route('/lutas/rockleeVsSasuke', methods=["POST"])
+def rockleeVsSasuke():
+    return render_template("lutas/RockleeVsSasuke.html")
+
+
+@app.route('/lutas/rockleeVsNaruto', methods=["POST"])
+def rockleeVsNaruto():
+    return render_template("lutas/RockleeVsNaruto.html")
+
+
+@app.route('/lutas/narutoVsSasuke', methods=["POST"])
+def narutoVsSasuke():
+    return render_template("lutas/NarutoVsSasuke.html")
+
+
+@app.route('/lutas/narutoVsGaara', methods=["POST"])
+def narutoVsGaara():
+    return render_template("lutas/NarutoVsGaara.html")
+
+
+@app.route('/lutas/gaaraVsSasuke', methods=["POST"])
+def gaaraVsSasuke():
+    return render_template("lutas/GaaraVsSasuke.html")
+
+
+@app.route('/lutas/gaaraVsRocklee', methods=["POST"])
+def gaaraVsRocklee():
+    return render_template("lutas/GaaraVsRocklee.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)

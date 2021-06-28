@@ -9,7 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: black;
-  background: url(img/bg.jpg);
+  background: url(../img/bg.jpg);
   background-attachment: fixed;
   background-size: cover;
 

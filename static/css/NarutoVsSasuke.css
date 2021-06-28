@@ -17,7 +17,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../../img/naruto-bg-luta.png) no-repeat;
+  background: url(../img/naruto-bg-luta.png) no-repeat;
   background-position: left;
   left: 0%;
 }
@@ -26,15 +26,16 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../../img/gaara-bg-luta.png) no-repeat;
+  background: url(../img/sasuke-bg-luta.png) no-repeat;
   background-position: right;
+  right: 5%;
 }
 
 .conteudo {
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 2%;
+  left: 7%;
 }
 
 h2:nth-child(1) {
@@ -48,7 +49,7 @@ h2 {
 }
 
 .container {
-  margin-top: 50px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,9 +58,8 @@ h2 {
 img {
   width: 30%;
 }
-
 button {
-  margin-top: 50px;
+  margin-top: 40px;
   background-color: #c3c3c3;
   color: black;
   font-size: 20px;
